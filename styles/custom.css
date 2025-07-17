@@ -1,0 +1,592 @@
+/* Custom CSS for enhanced Streamlit UI - Modern Dark Theme */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Global styles - Theme will be handled dynamically */
+.stApp {
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Override Streamlit's default background */
+.main > div {
+    background: transparent;
+}
+
+/* Tab styling base */
+.stTabs [data-baseweb="tab-list"] {
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: transparent;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    margin: 0 0.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Enhanced slider styling for both themes */
+.stSlider {
+    padding: 1.5rem 0;
+}
+
+/* Slider track background */
+.stSlider > div > div > div {
+    height: 8px !important;
+    border-radius: 10px !important;
+}
+
+/* Slider track base */
+.stSlider > div > div > div > div {
+    height: 8px !important;
+    border-radius: 10px !important;
+}
+
+/* Slider filled track */
+.stSlider > div > div > div > div > div {
+    height: 8px !important;
+    border-radius: 10px !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #F093FB 100%) !important;
+}
+
+/* Slider thumb */
+.stSlider > div > div > div > div > div > div {
+    width: 24px !important;
+    height: 24px !important;
+    border-radius: 50% !important;
+    top: -8px !important;
+    background: white !important;
+    border: 3px solid #667eea !important;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3) !important;
+    transition: all 0.2s ease !important;
+    cursor: pointer !important;
+}
+
+.stSlider > div > div > div > div > div > div:hover {
+    transform: scale(1.15) !important;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5) !important;
+    border-color: #764ba2 !important;
+}
+
+.stSlider > div > div > div > div > div > div:active {
+    transform: scale(1.1) !important;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6) !important;
+}
+
+/* Form labels enhancement */
+.stMarkdown h4 {
+    color: inherit;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* Form spacing */
+.stSelectbox, .stSlider, .stTextInput, .stRadio {
+    margin-bottom: 1.5rem;
+}
+
+/* Enhanced selectbox styling */
+.stSelectbox label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Enhanced text input styling */
+.stTextInput label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+/* Header styling */
+.header-container {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #F093FB 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.main-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.subtitle {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Navigation container */
+.nav-container {
+    margin-bottom: 2rem;
+}
+
+/* Tab content styling - Dynamic theming */
+.tab-content {
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Form container - Dynamic theming */
+.form-container {
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Results container - Dynamic theming */
+.results-container {
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Prediction result styling */
+.prediction-result {
+    margin: 2rem 0;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.prediction-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #F093FB 100%);
+    padding: 2.5rem;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.prediction-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6);
+}
+
+.prediction-card h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.prediction-value {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.confidence-range {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+/* Insights container - Dynamic theming */
+.insights-container {
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    border-left: 4px solid #667eea;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Metrics styling - Dynamic theming */
+.metric-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.metric-card {
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.metric-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+}
+
+.metric-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #F093FB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.metric-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Button styling */
+.stButton > button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #F093FB 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+}
+
+.stButton > button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Sidebar styling - Dynamic theming handled by theme manager */
+.css-1d391kg .stSelectbox, .css-1d391kg .stSlider {
+    margin-bottom: 1rem;
+}
+
+/* Card styling for sections - Dynamic theming */
+.section-card {
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Progress bar styling */
+.stProgress > div > div {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #F093FB 100%);
+    border-radius: 10px;
+}
+
+/* Info/Success/Error message styling */
+.stAlert {
+    background: rgba(26, 32, 44, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+.stAlert > div {
+    color: #E2E8F0;
+}
+
+/* Dataframe styling */
+.stDataFrame {
+    background: rgba(26, 32, 44, 0.8);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Radio button styling */
+.stRadio > div {
+    background: rgba(45, 55, 72, 0.8);
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Checkbox styling */
+.stCheckbox > div {
+    background: rgba(45, 55, 72, 0.8);
+    border-radius: 8px;
+    padding: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* File uploader styling */
+.stFileUploader > div {
+    background: rgba(45, 55, 72, 0.8);
+    border: 2px dashed rgba(102, 126, 234, 0.5);
+    border-radius: 12px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+/* Expander styling */
+.stExpander {
+    background: rgba(26, 32, 44, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
+/* Selectbox styling */
+.stSelectbox > div > div {
+    background: rgba(45, 55, 72, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #E2E8F0;
+}
+
+/* Slider styling */
+.stSlider > div > div > div {
+    background: rgba(45, 55, 72, 0.8);
+    border-radius: 20px;
+}
+
+/* Text input styling */
+.stTextInput > div > div > input {
+    background: rgba(45, 55, 72, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #E2E8F0;
+}
+
+/* Custom gradient text */
+.gradient-text {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #F093FB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+    background: rgba(26, 32, 44, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+}
+
+/* Neon glow effect */
+.neon-glow {
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+/* Animated gradient background */
+.animated-gradient {
+    background: linear-gradient(-45deg, #667eea, #764ba2, #F093FB, #667eea);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Success message styling */
+.success-message {
+    background: #d4edda;
+    color: #155724;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #c3e6cb;
+    margin: 1rem 0;
+}
+
+/* Error message styling */
+.error-message {
+    background: #f8d7da;
+    color: #721c24;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #f5c6cb;
+    margin: 1rem 0;
+}
+
+/* Info message styling */
+.info-message {
+    background: #cce7ff;
+    color: #004085;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #b8daff;
+    margin: 1rem 0;
+}
+
+/* Table styling */
+.stDataFrame {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: 600;
+}
+
+/* Chart container */
+.chart-container {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin: 1rem 0;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid #e9ecef;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #667eea;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+    
+    .prediction-value {
+        font-size: 2.5rem;
+    }
+    
+    .metric-card {
+        margin: 0.5rem 0;
+    }
+    
+    .header-container {
+        padding: 1.5rem;
+    }
+}
+
+/* Hover effects */
+.hover-card {
+    transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5a67d8;
+}
+
+/* ─── Hide Streamlit’s Deploy button and kebab (⋮) menu ─── */
+button[kind="header"],
+button[data-testid="stBaseButton-header"],
+button[kind="headerDeploymentButton"],
+button[data-testid="deploymentButton"],
+header [data-testid="stHeader"] > div:nth-child(2),
+svg.e10vaf9m1.st-emotion-cache-1pbsqtx.ex0cdmw0 {
+    display: none !important;
+}
+
+
+/*Predict button shifting */
+
+.stTooltipIcon {
+    margin-top: 11px !important;
+}
+
+
+

@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: streamlit-app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run main.py --server.port=$PORT --server.enableCORS=false
