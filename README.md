@@ -48,7 +48,7 @@
 <section style="padding: 40px; margin: 20px auto; max-width: 900px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); border-left: 5px solid #dc3545;">
     <h2 style="color: #dc3545; font-size: 32px; border-bottom: 2px solid #dc3545; padding-bottom: 10px; margin-bottom: 20px;">🔗 Links</h2>
     <ul style="font-size: 18px; color: #007bff; list-style-type: square; margin-left: 40px; line-height: 1.6;">
-        <li><a href="https://github.com/Subirxgt/Food-Delivery-Time-Prediction-" target="_blank" style="text-decoration: none;">📁 GitHub Repository</a></li>
-        <li><a href="https://food-delivery-time-prediction-kbz3.onrender.com/" target="_blank" style="text-decoration: none;">🌐 Live Web App</a></li>
+       
+        <li><a href="https://food-delivery-time-prediction-z1qp.onrender.com/" target="_blank" style="text-decoration: none;">🌐 Live Web App</a></li>
     </ul>
 </section>
