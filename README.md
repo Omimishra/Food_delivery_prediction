@@ -6,7 +6,7 @@
     <h2 style="color: #dc3545; font-size: 32px; border-bottom: 2px solid #dc3545; padding-bottom: 10px; margin-bottom: 20px;">📋 Project Overview</h2>
     <p style="font-size: 18px; color: #555; line-height: 1.6; text-align: justify;">
         This project focuses on predicting the estimated food delivery time based on various delivery-related features such as delivery person age, vehicle condition, weather conditions, traffic density, and more. The model is trained using machine learning techniques to enhance the operational efficiency of food delivery platforms.
-        The final product is deployed as an interactive web application that accepts user input and returns the predicted delivery time in minutes.
+        The final product is deployed as an interactive web application built with <strong>Streamlit</strong> that accepts user input and returns the predicted delivery time in minutes.
     </p>
 </section>
 
@@ -17,8 +17,8 @@
         <li>Performed feature engineering including time/date extraction.</li>
         <li>Built a machine learning pipeline using <strong>Random Forest Regressor</strong>.</li>
         <li>Saved the trained model using <code>pickle</code> for production use.</li>
-        <li>Developed a Flask web application for real-time prediction.</li>
-        <li>Deployed the web app using Render.</li>
+        <li>Developed a <strong>Streamlit</strong> web application for real-time prediction.</li>
+        <li>Deployed the web app using <strong>Render</strong>.</li>
     </ul>
 </section>
 
@@ -29,8 +29,8 @@
         <li><strong>Pandas</strong> and <strong>NumPy</strong> for data manipulation and preprocessing.</li>
         <li><strong>Scikit-learn</strong> for model training and evaluation.</li>
         <li><strong>Matplotlib</strong> and <strong>Seaborn</strong> for data visualization.</li>
-        <li><strong>Flask</strong> for building the web interface.</li>
-        <li><strong>HTML & CSS</strong> for frontend design.</li>
+        <li><strong>Streamlit</strong> for building the web interface.</li>
+        <li><strong>HTML & CSS</strong> for frontend design customization.</li>
         <li><strong>Render</strong> for hosting the web app.</li>
     </ul>
 </section>
@@ -39,7 +39,7 @@
     <h2 style="color: #dc3545; font-size: 32px; border-bottom: 2px solid #dc3545; padding-bottom: 10px; margin-bottom: 20px;">📝 Deliverables</h2>
     <ul style="font-size: 18px; color: #555; list-style-type: square; margin-left: 40px; line-height: 1.6;">
         <li>Machine Learning Model (Pickle format)</li>
-        <li>Flask App with input form and real-time predictions</li>
+        <li>Streamlit App with input form and real-time predictions</li>
         <li>Deployment on Render platform</li>
         <li>Codebase including preprocessing, model, and app logic</li>
     </ul>
